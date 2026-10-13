@@ -22,7 +22,7 @@ export default async function Dashboard({ params }: { params: Promise<{ year: st
 
   return (
     <>
-      <PageHeader title={`${year!.label} Performance Review`} subtitle={owner ? [owner.display_name, owner.job_title].filter(Boolean).join(' · ') : undefined}
+      <PageHeader title={`${year!.label} Perfomance Review`} subtitle={owner ? [owner.display_name, owner.job_title].filter(Boolean).join(' · ') : undefined}
         actions={admin ? <WorkFormModal data={d} techSuggestions={s.tech.map((t) => t.name)} /> : undefined} />
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-5">
